@@ -1,4 +1,7 @@
 import type { CatalogFilter, ProductBrand, ProductCategory } from './types'
+import { assetUrl } from './asset-url'
+
+const promoImg = (path: string) => assetUrl(`images/${path}`)
 
 export const uk = {
   nav: {
@@ -31,7 +34,7 @@ export const uk = {
             name: 'Qualità Oro',
             price: 899,
             weight: '1 кг',
-            image: '/images/banner/banner-lavazza-qualita-oro-beans-1kg.webp',
+            image: promoImg('banner/banner-lavazza-qualita-oro-beans-1kg.webp'),
             filter: 'Lavazza' as const,
           },
           {
@@ -39,7 +42,7 @@ export const uk = {
             name: 'Super Crema',
             price: 899,
             weight: '1 кг',
-            image: '/images/banner/banner-lavazza-super-crema-beans-1kg.webp',
+            image: promoImg('banner/banner-lavazza-super-crema-beans-1kg.webp'),
             filter: 'Lavazza' as const,
           },
           {
@@ -47,7 +50,7 @@ export const uk = {
             name: 'Qualità Rossa',
             price: 799,
             weight: '1 кг',
-            image: '/images/banner/banner-lavazza-qualita-rossa-beans-1kg.webp',
+            image: promoImg('banner/banner-lavazza-qualita-rossa-beans-1kg.webp'),
             filter: 'Lavazza' as const,
           },
         ],
@@ -62,7 +65,7 @@ export const uk = {
             name: 'Lavazza Oro',
             price: 899,
             weight: '1 кг',
-            image: '/images/banner/banner-lavazza-qualita-oro-beans-1kg.webp',
+            image: promoImg('banner/banner-lavazza-qualita-oro-beans-1kg.webp'),
             filter: 'Lavazza' as const,
           },
           {
@@ -70,7 +73,7 @@ export const uk = {
             name: 'Jacobs Monarch',
             price: 449,
             weight: '500 г',
-            image: '/images/banner/banner-jacobs-monarch-signature-500g.webp',
+            image: promoImg('banner/banner-jacobs-monarch-signature-500g.webp'),
             filter: 'Jacobs' as const,
           },
           {
@@ -78,7 +81,7 @@ export const uk = {
             name: 'MacCoffee Original',
             price: 189,
             weight: 'стіки',
-            image: '/images/banner/banner-maccoffee-original-3in1.webp',
+            image: promoImg('banner/banner-maccoffee-original-3in1.webp'),
             filter: 'MacCoffee' as const,
           },
         ],
@@ -93,7 +96,7 @@ export const uk = {
             name: 'Lavazza Oro',
             price: 229,
             weight: '250 г',
-            image: '/images/banner/banner-lavazza-qualita-oro-ground-250g.webp',
+            image: promoImg('banner/banner-lavazza-qualita-oro-ground-250g.webp'),
             filter: 'Lavazza' as const,
           },
           {
@@ -101,7 +104,7 @@ export const uk = {
             name: 'Ambassador Premium',
             price: 349,
             weight: '400 г',
-            image: '/images/banner/banner-ambassador-premium-400g.webp',
+            image: promoImg('banner/banner-ambassador-premium-400g.webp'),
             filter: 'Ambassador' as const,
           },
           {
@@ -109,7 +112,7 @@ export const uk = {
             name: 'Jacobs Monarch',
             price: 399,
             weight: '400 г',
-            image: '/images/banner/banner-jacobs-monarch-signature-400g.webp',
+            image: promoImg('banner/banner-jacobs-monarch-signature-400g.webp'),
             filter: 'Jacobs' as const,
           },
         ],

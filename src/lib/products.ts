@@ -1,6 +1,7 @@
 import type { Product, ProductBrand } from './types'
+import { assetUrl } from './asset-url'
 
-const img = (file: string) => `/images/${file.replace(/\.png$/, '.webp')}`
+const img = (file: string) => assetUrl(`images/${file.replace(/\.png$/, '.webp')}`)
 
 /** Повний асортимент — 19 позицій з ваших фото */
 export const STORE_PRODUCTS: Product[] = [

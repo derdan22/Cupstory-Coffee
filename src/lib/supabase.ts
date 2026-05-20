@@ -1,6 +1,15 @@
 import { createClient } from '@supabase/supabase-js'
+import { assetUrl } from './asset-url'
 import type { Product, OrderItem } from './types'
 import { STORE_PRODUCTS, sortProducts } from './products'
+
+function withAssetBase(product: Product): Product {
+  const url = product.image_url
+  if (!url || url.startsWith('http') || url.startsWith(import.meta.env.BASE_URL)) {
+    return product
+  }
+  return { ...product, image_url: assetUrl(url.replace(/^\//, '')) }
+}
 
 const url = import.meta.env.VITE_SUPABASE_URL
 const key = import.meta.env.VITE_SUPABASE_ANON_KEY
@@ -17,7 +26,7 @@ export async function fetchProducts(): Promise<Product[]> {
   const { data, error } = await supabase.from('products').select('*').order('price', { ascending: true })
 
   if (error || !data?.length) return sortProducts(STORE_PRODUCTS)
-  return sortProducts(data as Product[])
+  return sortProducts((data as Product[]).map(withAssetBase))
 }
 
 export async function createOrder(payload: {
