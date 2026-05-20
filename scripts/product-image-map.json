@@ -1,0 +1,21 @@
+[
+  { "photo": "photo_1", "out": "lavazza-crema-e-aroma-beans-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_2", "out": "lavazza-qualita-oro-mountain-beans-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_3", "out": "lavazza-qualita-rossa-beans-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_4", "out": "lavazza-crema-e-gusto-classico-beans-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_5", "out": "lavazza-crema-e-aroma-professional-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_6", "out": "lavazza-tierra-selection-beans-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_7", "out": "lavazza-super-crema-beans-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_8", "out": "lavazza-gold-selection-beans-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_9", "out": "lavazza-qualita-oro-beans-1kg.webp", "skipGenerate": false },
+  { "photo": "photo_10", "out": "lavazza-qualita-rossa-ground-250g.webp", "skipGenerate": false },
+  { "photo": "photo_11", "out": "lavazza-crema-e-gusto-ground-250g.webp", "skipGenerate": false },
+  { "photo": "photo_12", "out": "lavazza-qualita-oro-ground-250g.webp", "skipGenerate": false },
+  { "photo": "photo_13", "out": "lavazza-qualita-oro-mountain-ground-250g.webp", "skipGenerate": true },
+  { "photo": "photo_14", "out": "lavazza-crema-e-gusto-classico-ground-250g.webp", "skipGenerate": false },
+  { "photo": "photo_15", "out": "lavazza-espresso-italiano-classico-250g.webp", "skipGenerate": false },
+  { "photo": "photo_16", "out": "maccoffee-original-3in1.webp", "skipGenerate": false },
+  { "photo": "photo_17", "out": "ambassador-premium-400g.webp", "skipGenerate": false },
+  { "photo": "photo_18", "out": "jacobs-monarch-signature-400g.webp", "skipGenerate": false },
+  { "photo": "photo_19", "out": "jacobs-monarch-signature-500g.webp", "skipGenerate": false }
+]
