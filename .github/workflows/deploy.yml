@@ -27,13 +27,21 @@ jobs:
 
       - run: npm ci
 
-      - name: Build
+      - name: Build for GitHub Pages
         run: npm run build
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
 
-      - name: SPA fallback for GitHub Pages
-        run: cp dist/index.html dist/404.html
+      - name: SPA fallback + disable Jekyll
+        run: |
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
+
+      - name: Verify production bundle
+        run: |
+          grep -q "${{ github.event.repository.name }}/assets/index-" dist/index.html
+          ! grep -q 'src/main.tsx' dist/index.html
+          echo "dist/index.html OK"
 
       - uses: actions/upload-pages-artifact@v3
         with:
